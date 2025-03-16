@@ -70,15 +70,16 @@ class QuarnScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             CircleAvatar(
-                              backgroundColor: Color(0xFFA85000),
                               radius: 18,
-                              child: Flexible(
-                                  child: Text(
-                                '${state.suwars[index].number}',
-                                style: GoogleFonts.elMessiri (
-                                    fontSize: 20, color: Colors.white,
-                                    fontWeight: FontWeight.bold),
-                              )),
+                              backgroundColor: const Color(0xFFA85000),
+                              child: Text(
+                                '${index + 1}',
+                                style: GoogleFonts.elMessiri(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
